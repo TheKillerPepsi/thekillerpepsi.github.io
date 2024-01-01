@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Hello World! </title>
+    <!-- Bootstrap CSS -->
+    <!-- link rel="stylesheet" href="css/bootstrap.min.css"-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href= "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"/>
+
+    	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href=
+    "https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" />
+    
+        <!-- Bootstrap Font Icon CSS -->
+        <link rel="stylesheet" href=
+    "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+
+    <!--Eigenes Javascript einbinden -->
+    <script src="code.js"></script>
+
+
+  </head>
+  <body>
+     <!-- Bootstrap JS -->
+    <!--script src="js/bootstrap.bundle.min.js"> </script-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+     
+    
+    <!-- Header -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-1 bg-warning text-center">
+                <img src="./img/Textify_full_logo.svg" class="img-fluid" alt="Logo" style="max-width: 80%;">
+            </div>
+            <div class="col bg-secondary">
+                <nav class="navbar navbar-expand-sm bg-secondary">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link text-light" href="./index.html">Home</a>
+                      </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="./translate.html"> Gender It!</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="./translate_rtl.html"> Change Language Direction</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+    </div>
+    </div>
+
+    <!-- Content -->
+    <div class="container-fluid">
+        <div class="row vh-100">
+            <!-- Outer grid -->
+            <div class="col bg-info">
+                <div class="row bg-warn">
+
+                </div>
+                <div class="row p-3">
+                    <!-- Inner grids -->
+                    <div class="col-1 bg-info p-3"></div>
+                    <div class="col-5 bg-light p-3"> 
+                        <form>
+                            <div class="form-group">
+                                <div class="col-12 bg-light p-3"> 
+                                    <!-- <label for="exampleFormControlTextarea1" >Enter your text! </label> -->
+                                    <button  type="button" class="btn btn-sm" disabled> Enter your text!</button>
+                                </div>
+                                <div class="col-12 bg-light p-3"> 
+                                <textarea id="input_field" class="form-control"  rows="30"></textarea>
+                                </div>
+                              </div>
+                        </form>
+                    </div>
+                    <div class="col-5 bg-light p-3">
+                        <form>
+                            <div class="col-12 bg-light p-3"> 
+                            <button onclick="main()" type="button" class="btn btn-outline-secondary btn-sm"> Gender it!</button>
+                            </div>
+                            <div class="col-12 bg-light p-3"> 
+                            <textarea readonly id="output_field" class="form-control"  rows="30"></textarea>
+                            </div>
+                        </form>
+
+                    </div>
+                    <div class="col-1 bg-info p-3"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Footer -->
+    <div class="container-fluid bg-secondary">
+        <div class="row">
+            <div class="col-5 text-truncate text-light">
+                <p> DiverseTextify ist ein Produkt der Textify GmBH
+                <br>
+                Textify GMBH
+                <br>
+                Max-Mustermann-Straße 50
+                <br>
+                12345678 Musterstadt
+                <br>
+                Mail: contact@textify.de </p>
+            </div>
+            <div class="col-2 p-5">
+                <p class="text-light"> Impressum &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Datenschutz </p>  
+            </div>
+        </div>
+    </div>
+
+
+  </body>
+</html>
